@@ -7,6 +7,9 @@ namespace Final.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<TeamMember> TeamMembers { get; set; }
-        // Add other DbSets here
+        public DbSet<Hobby> Hobbies { get; set; }
+        public DbSet<FavoriteBreakfastFood> FavoriteBreakfastFoods { get; set; }
+        public DbSet<Book> Books { get; set; }
+
     }
 }
